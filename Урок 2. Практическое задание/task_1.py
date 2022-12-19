@@ -4,14 +4,11 @@
 Использовать функцию type() для проверки типа.
 Элементы списка можно не запрашивать у пользователя,
 а указать явно, в программе.
-
-Пример:
-для списка [5, "string", 0.15, True, None]
-результат
-
-<class 'int'>
-<class 'str'>
-<class 'float'>
-<class 'bool'>
-<class 'NoneType'>
 """
+
+my_list = [5, "string", 0.15, True, None]
+print(type(my_list[0]))
+print(type(my_list[2]))
+print(type(my_list[3]))
+print(type(my_list[4]))
+print(list(map(type, my_list)))
